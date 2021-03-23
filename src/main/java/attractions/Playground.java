@@ -1,5 +1,6 @@
 package attractions;
 
+
 import behaviours.ISecurity;
 import people.Visitor;
 
@@ -10,8 +11,8 @@ public class Playground extends Attraction implements ISecurity {
     }
 
     public boolean isAllowedTo(Visitor visitor) {
-        if (visitor.getAge() >= 15)
-            return false;
-        else return true;
+        if (visitor.getAge() <= 15)
+            return true;
+        else return false;
     }
 }
