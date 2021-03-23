@@ -1,5 +1,4 @@
 package people;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,6 +11,7 @@ public class VisitorTest {
     @Before
     public void before(){
         visitor = new Visitor(14, 1.2, 40.0);
+
     }
 
     @Test
@@ -28,4 +28,6 @@ public class VisitorTest {
     public void hasMoney() {
         assertEquals(40.0, visitor.getMoney(), 0.1);
     }
+
+
 }
